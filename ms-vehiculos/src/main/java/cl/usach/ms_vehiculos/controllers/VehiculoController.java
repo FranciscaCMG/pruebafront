@@ -20,7 +20,6 @@ import cl.usach.ms_vehiculos.services.VehiculoService;
 
 @RestController
 //@RequestMapping("/vehiculo")
-@CrossOrigin("*")
 public class VehiculoController {
 
 	@Autowired

@@ -19,7 +19,6 @@ import cl.usach.ms_catalogosr.services.RecargoAntiguedadService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class RecargoAntiguedadController {
 
 	@Autowired

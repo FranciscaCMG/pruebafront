@@ -25,7 +25,6 @@ import cl.usach.ms_reportes.services.ReportesService;
 
 @RestController
 @RequestMapping("/reportes")
-@CrossOrigin("*")
 public class ReportesController {
 	
 	@Autowired

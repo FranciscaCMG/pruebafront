@@ -20,7 +20,6 @@ import cl.usach.ms_catalogosv.services.TiposService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class TiposController {
 	@Autowired
 	private TiposService tiposService;

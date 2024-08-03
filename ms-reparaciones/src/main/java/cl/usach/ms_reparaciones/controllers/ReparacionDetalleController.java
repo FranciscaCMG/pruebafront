@@ -20,7 +20,6 @@ import cl.usach.ms_reparaciones.services.ReparacionDetalleService;
 
 @RestController
 @RequestMapping("/reparaciondetalle")
-@CrossOrigin("*")
 public class ReparacionDetalleController {
 
 	@Autowired

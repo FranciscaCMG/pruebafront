@@ -19,7 +19,6 @@ import cl.usach.ms_catalogosr.services.PreciosService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class PreciosController {
 
 	@Autowired

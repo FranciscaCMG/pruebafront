@@ -19,7 +19,6 @@ import cl.usach.ms_catalogosr.services.RecargoKilometrajeService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class RecargoKilometrajeController {
 	@Autowired
 	private RecargoKilometrajeService recargoKilometrajeService;

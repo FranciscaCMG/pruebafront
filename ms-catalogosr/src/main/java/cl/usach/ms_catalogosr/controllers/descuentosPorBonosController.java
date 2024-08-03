@@ -19,7 +19,6 @@ import cl.usach.ms_catalogosr.services.DescuentosPorBonosService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class descuentosPorBonosController {
 
 	@Autowired

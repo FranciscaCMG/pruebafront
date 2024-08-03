@@ -19,7 +19,6 @@ import cl.usach.ms_catalogosv.services.MarcasService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class MarcasController {
 	
 	@Autowired

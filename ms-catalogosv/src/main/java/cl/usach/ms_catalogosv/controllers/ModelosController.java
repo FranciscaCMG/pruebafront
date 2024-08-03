@@ -19,7 +19,6 @@ import cl.usach.ms_catalogosv.services.ModelosService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class ModelosController {
 	@Autowired
 	private ModelosService modelosService;

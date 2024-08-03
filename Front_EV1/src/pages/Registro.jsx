@@ -107,6 +107,10 @@ export default function Registro() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log('VALORESSS');
+        console.log(patente, marca, modelo, tipo, anio, asientos, kilometraje);
+
+
         if (!patente || !marca || !modelo || !tipo || !anio || !asientos || !kilometraje) {
             setError({
                 ...error,
@@ -134,12 +138,12 @@ export default function Registro() {
                 post('http://localhost:8080/vehiculos/vehiculo', {
 
                     n_patente: patente.toLocaleUpperCase(),
-                    id_marca: marca,
-                    id_modelo: modelo,
-                    id_tipo_auto: tipo,
+                    id_marca: 1,
+                    id_modelo: 2,
+                    id_tipo_auto: 2,
                     anio_frabricacion: anio,
-                    n_asientos: asientos,
-                    kilometraje: kilometraje
+                    n_asientos: 5,
+                    kilometraje: 20000
                 })
                 .then(response => {
                     console.log(response);

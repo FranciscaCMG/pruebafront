@@ -18,7 +18,6 @@ import cl.usach.ms_listas.services.ListasService;
 
 @RestController
 @RequestMapping("/listas")
-@CrossOrigin("*")
 public class ListasController {
 
 	@Autowired

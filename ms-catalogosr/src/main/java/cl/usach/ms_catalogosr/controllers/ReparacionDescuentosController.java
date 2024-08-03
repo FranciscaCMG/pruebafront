@@ -19,7 +19,6 @@ import cl.usach.ms_catalogosr.services.ReparacionDescuentosService;
 
 @RestController
 @RequestMapping("/cats")
-@CrossOrigin("*")
 public class ReparacionDescuentosController {
 	
 	@Autowired
