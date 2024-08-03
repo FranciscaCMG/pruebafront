@@ -1,0 +1,1792 @@
+{
+	"info": {
+		"_postman_id": "87de9bed-0357-4745-80d1-f42ec4b63433",
+		"name": "Autofix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "catalogos",
+			"item": [
+				{
+					"name": "DescuentosPorBonos",
+					"item": [
+						{
+							"name": "descuentosPorBonos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/descuentosporbonos",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"descuentosporbonos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentosPorBonosById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/descuentosporbonos/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"descuentosporbonos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentosPorBonosUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"marca\": \"Toyota\",\n    \"numero_bono\": 5,\n    \"dinero_bono\": 70.00\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/descuentosporbonos",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"descuentosporbonos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentosPorBonosSave Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0 ,\n    \"marca\": \"Toyota Rad\",\n    \"numero_bono\": 5,\n    \"dinero_bono\": 70.00\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/descuentosporbonos",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"descuentosporbonos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentosPorBonosDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/descuentosporbonos/7",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"descuentosporbonos",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Precios",
+					"item": [
+						{
+							"name": "Precios",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/precios",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"precios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "precioById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/precios/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"precios",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "precioUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": 2,\n        \"id_tipo_reparacion\": null,\n        \"id_tipo_vehiculo\": null,\n        \"precio\": null\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/precios",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"precios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "precioSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"id_tipo_reparacion\": null,\n    \"id_tipo_vehiculo\": null,\n    \"precio\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/precios",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"precios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "precioDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/precios/7",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"precios",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RecargoAntiguedad",
+					"item": [
+						{
+							"name": "Recargos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargoantiguedad",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargoantiguedad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargoantiguedad/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargoantiguedad",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"intervalo_anios\": \"0 – 5\",\n    \"id_modelo\": 1,\n    \"descuento_porcentaje\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargoantiguedad",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargoantiguedad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"intervalo_anios\": \"0 – 5\",\n    \"id_modelo\": 1,\n    \"descuento_porcentaje\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargoantiguedad",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargoantiguedad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargoantiguedad/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargoantiguedad",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RecargoKilometraje",
+					"item": [
+						{
+							"name": "Recargos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargokilometraje",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargokilometraje"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargokilometraje/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargokilometraje",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"intervalo\": \"0 – 5.000\",\n    \"id_modelo\": 1,\n    \"descuento_porcentaje\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargokilometraje",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargokilometraje"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"intervalo\": \"0 – 5.000\",\n    \"id_modelo\": 1,\n    \"descuento_porcentaje\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargokilometraje",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargokilometraje"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "recargoDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/recargokilometraje/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"recargokilometraje",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ReparacionDescuentos",
+					"item": [
+						{
+							"name": "Descuentos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparaciondescuentos",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparaciondescuentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentoById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparaciondescuentos/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparaciondescuentos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentoUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"numero_reparaciones_ultimo_anio\": \"1 – 2\",\n    \"id_tipo_vehiculo\": 1,\n    \"descuento_porcentaje\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparaciondescuentos",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparaciondescuentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentoSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"numero_reparaciones_ultimo_anio\": \"1 – 2\",\n    \"id_tipo_vehiculo\": 1,\n    \"descuento_porcentaje\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparaciondescuentos",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparaciondescuentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "descuentoDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparaciondescuentos/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparaciondescuentos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TipoReparaciones",
+					"item": [
+						{
+							"name": "Tipos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/tiporeparaciones",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"tiporeparaciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tipoById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/tiporeparaciones/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"tiporeparaciones",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tipoUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"tipo\": \"Reparaciones del sistema de frenos\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/tiporeparaciones",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"tiporeparaciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tipoSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"tipo\": \"Reparaciones del sistema de frenos\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/tiporeparaciones",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"tiporeparaciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tipoDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/tiporeparaciones/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"tiporeparaciones",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ReparacionIncluye",
+					"item": [
+						{
+							"name": "RIncluye",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionincluye",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionincluye"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "rincluyeById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionincluye/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionincluye",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "rincluyeUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"id_tipo_reparacion\": 1,\n    \"reparacion\": \"reemplazo de pastillas de freno\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionincluye",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionincluye"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "rincluyeSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"id_tipo_reparacion\": 1,\n    \"reparacion\": \"reemplazo de pastillas de freno\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionincluye",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionincluye"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "rincluyeDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionincluye/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionincluye",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ReparacionSettings",
+					"item": [
+						{
+							"name": "Settings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionsettings",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionsettings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "settingById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionsettings/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionsettings",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "settingSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"nombre\": \"IVA\",\n    \"valor\": \"0.13\",\n    \"descripcion\": \"iva\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/reparacionsettings",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"reparacionsettings"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Marcas",
+					"item": [
+						{
+							"name": "Marcas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/marcas",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"marcas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "marcaById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/marcas/1",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"marcas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "marcaUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"marca\": \"Toyota\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/marcas",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"marcas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "marcaSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"marca\": \"Toyota\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/marcas",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"marcas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "marcaDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/marcas/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"marcas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Modelos",
+					"item": [
+						{
+							"name": "Modelos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/modelos",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"modelos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modeloById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/modelos/1",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"modelos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modeloUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"modelos\": \"Sedan\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/modelos",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"modelos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "marcaSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"modelos\": \"Sedan\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/modelos",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"modelos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modeloDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/modelos/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"modelos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tipos",
+					"item": [
+						{
+							"name": "Tipos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/tipos",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"tipos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tipoById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/tipos/1",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"tipos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tipoUpdate",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"tipo\": \"gasolina\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/tipos",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"tipos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tipoSave",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 0,\n    \"tipo\": \"gasolina\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{autofixBase}}catalogosv/cats/tipos",
+									"host": [
+										"{{autofixBase}}catalogosv"
+									],
+									"path": [
+										"cats",
+										"tipos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modeloDelete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{autofixBase}}catalogosr/cats/tipos/1",
+									"host": [
+										"{{autofixBase}}catalogosr"
+									],
+									"path": [
+										"cats",
+										"tipos",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "vehiculos",
+			"item": [
+				{
+					"name": "vehiculos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}vehiculos/vehiculo",
+							"host": [
+								"{{autofixBase}}vehiculos"
+							],
+							"path": [
+								"vehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehiculoByPatente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}vehiculos/vehiculo/bypatente/p8045",
+							"host": [
+								"{{autofixBase}}vehiculos"
+							],
+							"path": [
+								"vehiculo",
+								"bypatente",
+								"p8045"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehiculoById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}vehiculos/vehiculo/1",
+							"host": [
+								"{{autofixBase}}vehiculos"
+							],
+							"path": [
+								"vehiculo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehiculoUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"n_patente\": \"p8084\",\n    \"id_marca\": 1,\n    \"id_modelo\": 2,\n    \"id_tipo_auto\": 3,\n    \"anio_fabricacion\": \"2020\",\n    \"n_asientos\": 4,\n    \"kilometraje\": 3455\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}vehiculos/vehiculo",
+							"host": [
+								"{{autofixBase}}vehiculos"
+							],
+							"path": [
+								"vehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehiculoSave",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 0,\n    \"n_patente\": \"p8084\",\n    \"id_marca\": 1,\n    \"id_modelo\": 2,\n    \"id_tipo_auto\": 3,\n    \"anio_fabricacion\": \"2020\",\n    \"n_asientos\": 4,\n    \"kilometraje\": 3455\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}vehiculos/vehiculo",
+							"host": [
+								"{{autofixBase}}vehiculos"
+							],
+							"path": [
+								"vehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vehiculoDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}vehiculos/vehiculo/7",
+							"host": [
+								"{{autofixBase}}vehiculos"
+							],
+							"path": [
+								"vehiculo",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reparaciones",
+			"item": [
+				{
+					"name": "reparaciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reparacionById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion/1",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reparacionUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"fecha_ingreso\": \"2024-04-04T06:00:00.000+00:00\",\n    \"hora_ingreso\": \"12:34:56\",\n    \"monto_total_reparaciones\": 345.45,\n    \"monto_total_recargos\": null,\n    \"monto_iva\": 34.9,\n    \"total\": 2345.43,\n    \"fecha_salida\": \"2024-04-20T06:00:00.000+00:00\",\n    \"hora_salida\": \"12:34:56\",\n    \"fecha_entrega_cliente\": \"2024-04-20T06:00:00.000+00:00\",\n    \"hora_entrega_cliente\": \"12:34:56\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reparacionSave",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 0,\n    \"fecha_ingreso\": \"2024-04-04T06:00:00.000+00:00\",\n    \"hora_ingreso\": \"12:34:56\",\n    \"monto_total_reparaciones\": 345.45,\n    \"monto_total_recargos\": null,\n    \"monto_iva\": 34.9,\n    \"total\": 2345.43,\n    \"fecha_salida\": \"2024-04-20T06:00:00.000+00:00\",\n    \"hora_salida\": \"12:34:56\",\n    \"fecha_entrega_cliente\": \"2024-04-20T06:00:00.000+00:00\",\n    \"hora_entrega_cliente\": \"12:34:56\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reparacionDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion/28",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion",
+								"28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateHoraFechaSalida",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fecha_salida\": \"2024-04-04T06:00:00.000+00:00\",\n    \"hora_salida\": \"12:34:56\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion/updatehorafechasalida/1",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion",
+								"updatehorafechasalida",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateHoraFechaEntrega",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fecha_salida\": \"2024-04-04T06:00:00.000+00:00\",\n    \"hora_salida\": \"12:34:56\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion/updatehorafechaentrega/1",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion",
+								"updatehorafechaentrega",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "calcularDescuentosRecargos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idReparacion\": 1,\n    \"idTipoVehiculo\": 1,\n    \"idModelo\": 2,\n    \"kilometraje\": 3455,\n    \"anioFabricacion\": 2020\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion/calculardescuentosrecargos",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion",
+								"calculardescuentosrecargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "aplicarDescuentoBono",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idReparacion\": 1,\n    \"idBono\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparacion/aplicardescuentobono",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparacion",
+								"aplicardescuentobono"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reparacionesDetalle",
+			"item": [
+				{
+					"name": "detalleByReparacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparaciondetalle/detallebyreparacion/1",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparaciondetalle",
+								"detallebyreparacion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalleById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparaciondetalle/4",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparaciondetalle",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalleUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"idReparacion\": 1,\n    \"patente\": \"p2343\",\n    \"idPrecio\": 1,\n    \"fecha_reparacion\": \"2024-04-04T06:00:00.000+00:00\",\n    \"hora_reparacion\": \"12:34:56\",\n    \"monto_reparacion\": 120000.0,\n    \"id_modelo\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparaciondetalle",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparaciondetalle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalleSave",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 0,\n    \"idReparacion\": 1,\n    \"patente\": \"p2343\",\n    \"idPrecio\": 1,\n    \"fecha_reparacion\": \"2024-04-04T06:00:00.000+00:00\",\n    \"hora_reparacion\": \"12:34:56\",\n    \"monto_reparacion\": 120000.0,\n    \"id_modelo\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparaciondetalle",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparaciondetalle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalleDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparaciondetalle/4",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparaciondetalle",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateHoraFechaSalida",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fecha_salida\": \"2024-04-04\",\n    \"hora_salida\": \"12:34:56\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reparaciones/reparaciondetalle/updatefechahorasalida/3",
+							"host": [
+								"{{autofixBase}}reparaciones"
+							],
+							"path": [
+								"reparaciondetalle",
+								"updatefechahorasalida",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reportes",
+			"item": [
+				{
+					"name": "Reporte1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fechaInicial\": \"2024-04-01\",\n    \"fechaFinal\": \"2024-04-30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{autofixBase}}reportes/reportes/reporte1",
+							"host": [
+								"{{autofixBase}}reportes"
+							],
+							"path": [
+								"reportes",
+								"reporte1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reporte2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reportes/reportes/reporte2/4/2024",
+							"host": [
+								"{{autofixBase}}reportes"
+							],
+							"path": [
+								"reportes",
+								"reporte2",
+								"4",
+								"2024"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listaReparaciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{autofixBase}}reportes/reportes/listareparaciones",
+							"host": [
+								"{{autofixBase}}reportes"
+							],
+							"path": [
+								"reportes",
+								"listareparaciones"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

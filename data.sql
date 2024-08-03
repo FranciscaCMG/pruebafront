@@ -1,0 +1,1 @@
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO postgres;GRANT ALL ON ALL TABLES IN SCHEMA public TO postgres;alter role postgres superuser;SELECT * FROM pg_user;SELECT * FROM pg_roles;
